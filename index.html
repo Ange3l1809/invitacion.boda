@@ -13,6 +13,20 @@
       text-align: center;
     }
 
+    .countdown-container {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+    margin: 40px auto;
+    max-width: 400px;
+  }
+
+  .countdown {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
     .hero {
       background-image: url('https://ruta-de-tu-imagen.jpg'); /* Cambia por tu imagen de portada */
       background-size: cover;
@@ -115,16 +129,14 @@
       “Nos sentimos felices de compartir este momento tan especial con ustedes.  
       Gracias por ser parte de nuestra historia.”  
       <br><br>
-      — Luis Ángel y [Nombre]
+      — Keyla y Angel
     </div>
   </div>
 
+  <div class="countdown-container">
   <div class="countdown" id="contador"></div>
+</div>
 
-<div class="location">
-    Quinta Real Garden, Avenida Real de San Pedro, Real del Potosí,  
-    San Luis Potosí, México — 16:30
-  </div>
 
   <script>
     const countdownElement = document.getElementById("contador");
