@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de Boda</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f8f4f0;
+      color: #333;
+      text-align: center;
+    }
+
+    .hero {
+      background-image: url('https://ruta-de-tu-imagen.jpg'); /* Reemplaza con tu imagen */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 0 0 5px black;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      background-color: #a67c52;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      font-size: 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      margin: 10px;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #8b6b43;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding: 10px;
+      width: 80%;
+      max-width: 300px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    iframe {
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Música -->
+  <audio autoplay loop controls style="display: block; margin: 20px auto 0 auto;">
+    <source src="https://www.example.com/tu-cancion.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+  <!-- Portada -->
+  <div class="hero">
+    <div>
+      <h1>Juan & María</h1>
+      <p>Nos casamos el 20 de diciembre de 2025</p>
+    </div>
+  </div>
+
+  <!-- Invitación -->
+  <div class="section">
+    <h2>¡Estás invitado!</h2>
+    <p>Queremos compartir este momento tan especial contigo.</p>
+    <a href="#confirmar" class="button">Confirmar Asistencia</a>
+    <a href="#ubicacion" class="button">Ver Ubicación</a>
+  </div>
+
+  <!-- Confirmar asistencia -->
+  <div class="section" id="confirmar">
+    <h2>Confirma tu asistencia</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required><br>
+      <input type="email" placeholder="Correo electrónico" required><br>
+      <button type="submit" class="button">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Ubicación -->
+  <div class="section" id="ubicacion">
+    <h2>Ubicación del Evento</h2>
+    <p>Salón Los Pinos, San Luis Potosí</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.131759091479!2d-101.00689328505714!3d22.15646998539137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a983f9f8a4b2b%3A0x3a1b32ed7ff5f5a0!2sCentro%20Hist%C3%B3rico%2C%20San%20Luis%20Potos%C3%AD!5e0!3m2!1ses!2smx!4v1684600618199!5m2!1ses!2smx"
+      width="100%" height="300" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+
+  <footer>
+    © 2025 Juan & María - Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
