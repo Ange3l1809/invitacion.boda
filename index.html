@@ -238,6 +238,21 @@
 
 
   <script>
+  
+  function iniciarInvitacion() {
+  const overlay = document.getElementById("bienvenida");
+  overlay.classList.add("bienvenida-oculta");
+
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 800); // Tiempo igual al de la transición
+
+  const musica = document.getElementById("musica");
+  musica.play().catch(e => {
+    console.log("Autoplay bloqueado. El usuario debe interactuar.");
+  });
+}
+  
     const countdownElement = document.getElementById("contador");
     const eventDate = new Date("2025-07-19T16:30:00");
 
@@ -263,19 +278,7 @@
     setInterval(updateCountdown, 1000);
   </script>
 
-function iniciarInvitacion() {
-  const overlay = document.getElementById("bienvenida");
-  overlay.classList.add("bienvenida-oculta");
 
-  setTimeout(() => {
-    overlay.style.display = "none";
-  }, 800); // Tiempo igual al de la transición
-
-  const musica = document.getElementById("musica");
-  musica.play().catch(e => {
-    console.log("Autoplay bloqueado. El usuario debe interactuar.");
-  });
-}
   
   <!-- Mapa + Botón -->
   <div class="section" id="ubicacion">
