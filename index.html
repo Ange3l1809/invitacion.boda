@@ -13,6 +13,48 @@
       color: #333;
       text-align: center;
     }
+    .bienvenida-oculta {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bienvenida-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f4f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  flex-direction: column;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.bienvenida-contenido h2 {
+  font-size: 2em;
+  color: #a67c52;
+  margin-bottom: 20px;
+}
+
+.bienvenida-contenido button {
+  background-color: #a67c52;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.bienvenida-contenido button:hover {
+  background-color: #8b6b43;
+}
+
 
     .countdown-container {
     background-color: #f9f9f9;
@@ -143,12 +185,32 @@
   </style>
 </head>
 <body>
+  
+  function iniciarInvitacion() {
+  const overlay = document.getElementById("bienvenida");
+  overlay.classList.add("bienvenida-oculta");
 
-  <!-- Música -->
-  <audio autoplay Loop Controls>
-    <source src="todo_cambio.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio.
-  </audio>
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 800); // Tiempo igual al de la transición
+
+  const musica = document.getElementById("musica");
+  musica.play().catch(e => {
+    console.log("Autoplay bloqueado. El usuario debe interactuar.");
+  });
+}
+  
+  <div id="bienvenida" class="bienvenida-overlay">
+  <div class="bienvenida-contenido">
+    <h2>Bienvenido a nuestra invitación</h2>
+    <button onclick="iniciarInvitacion()">Ver invitación</button>
+  </div>
+</div>
+
+  <audio id="musica" loop>
+  <source src="todo_cambio.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
 
   <!-- Portada -->
   <div class="hero">
