@@ -8,6 +8,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
   
+  .scroll-hint {
+  animation: aparecer 2s ease-in-out infinite;
+}
+
+@keyframes aparecer {
+  0% { opacity: 0; transform: translateY(-10px); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+  
   .titulo-invitacion {
   font-family: 'Great Vibes', cursive;
 }
@@ -245,6 +255,11 @@
       <p>Nos casamos el 19 de julio de 2025</p>
     </div>
   </div>
+
+<!-- GIF de deslizar hacia abajo -->
+<div style="text-align: center; margin-top: -50px;">
+  <img src="scroll-down.gif" alt="Desliza hacia abajo" class="scroll-hint" style="width: 60px; height: auto; opacity: 0.8;">
+</div>
 
   <!-- Sección de bienvenida -->
   <div class="section">
