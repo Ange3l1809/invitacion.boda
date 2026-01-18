@@ -174,3 +174,10 @@ footer {
   border-radius: 30px;
   box-shadow: 0 20px 40px rgba(0,0,0,.08);
 }
+
+.script {
+  font-family: 'Allura', cursive;
+  font-size: 34px;
+  color: #B6A17A;
+  letter-spacing: 1px;
+}
