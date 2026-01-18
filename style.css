@@ -94,16 +94,8 @@ footer {
 }
 
 /* ANIMACIONES */
-.fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 1s ease;
-}
-
-.slide {
-  opacity: 0;
-  transform: translateX(-20px);
-  transition: 1s ease;
+.fade, .slide {
+  transition: all 1.2s cubic-bezier(.25,.8,.25,1);
 }
 
 .show {
