@@ -293,3 +293,14 @@ footer {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0,0,0,.12);
 }
+
+.swipe {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.swipe.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
