@@ -259,3 +259,37 @@ footer {
 .btn-calendar:hover {
   background-color: #eee;
 }
+
+.gift-text {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.gift-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 22px;
+  border-radius: 40px;
+
+  background: #fff;
+  border: 1px solid #e5e5e5;
+
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.gift-card img {
+  width: 28px;
+  height: auto;
+}
+
+.gift-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
