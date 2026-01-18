@@ -142,14 +142,14 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #9FB3A2;
-  border: none;
-  color: white;
-  font-size: 20px;
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+  border: none;
+  background: #9FB3A2;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
   z-index: 999;
 }
 
