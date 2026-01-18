@@ -177,9 +177,21 @@ footer {
   box-shadow: 0 20px 40px rgba(0,0,0,.08);
 }
 
+.parents p {
+  margin: 0;
+}
+
 .script {
+  margin-top: 40px;
+  margin-bottom: 8px;
   font-family: 'Allura', cursive;
-  font-size: 34px;
+  font-size: 32px;
   color: #B6A17A;
-  letter-spacing: 1px;
+}
+
+.names {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
 }
