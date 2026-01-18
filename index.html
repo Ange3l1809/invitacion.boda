@@ -1,30 +1,34 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keyla & Angel</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyla & Angel</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
 <!-- PORTADA -->
-<section class="cover">
-  <p class="intro">Nos casamos</p>
-  <h1>Keyla<br>&<br>Angel</h1>
-  <span class="date">14 · 03 · 2026</span>
+<section class="cover fade">
+  <span class="small">Nos casamos</span>
+  <h1>Keyla<br><em>&</em><br>Angel</h1>
+  <div class="line"></div>
+  <p class="date">14 · Marzo · 2026</p>
 </section>
 
 <!-- MENSAJE -->
-<section class="section">
-  <p class="message">
+<section class="section slide">
+  <p class="text">
     Con la bendición de Dios y de nuestros padres,<br>
-    tenemos el honor de invitarte a celebrar nuestra unión.
+    queremos compartir contigo este día tan especial.
   </p>
 </section>
 
 <!-- PADRES -->
-<section class="section">
+<section class="section fade">
   <h2>Nuestros padres</h2>
   <div class="parents">
     <p><strong>Padres de la novia</strong><br>Nombre del padre<br>Nombre de la madre</p>
@@ -33,7 +37,7 @@
 </section>
 
 <!-- CUENTA REGRESIVA -->
-<section class="section">
+<section class="section slide">
   <h2>Faltan</h2>
   <div id="countdown">
     <div><span id="days">00</span><small>Días</small></div>
@@ -44,22 +48,22 @@
 </section>
 
 <!-- CEREMONIA -->
-<section class="section">
+<section class="section fade">
   <h2>Ceremonia</h2>
-  <p>⏰ 5:00 PM</p>
-  <p>📍 Nombre del templo o salón</p>
-  <a class="btn" href="https://maps.google.com" target="_blank">Ver ubicación</a>
+  <p class="icon">⏰ 5:00 PM</p>
+  <p class="icon">📍 Templo</p>
+  <a class="btn" href="#" target="_blank">Ver ubicación</a>
 </section>
 
 <!-- RECEPCIÓN -->
-<section class="section">
+<section class="section slide">
   <h2>Recepción</h2>
-  <p>⏰ 7:00 PM</p>
-  <p>📍 Salón de eventos</p>
+  <p class="icon">⏰ 7:00 PM</p>
+  <p class="icon">📍 Salón de eventos</p>
 </section>
 
 <!-- ITINERARIO -->
-<section class="section">
+<section class="section fade">
   <h2>Itinerario</h2>
   <ul class="timeline">
     <li>5:00 PM · Ceremonia</li>
@@ -70,35 +74,35 @@
 </section>
 
 <!-- DRESS CODE -->
-<section class="section">
+<section class="section slide">
   <h2>Código de vestimenta</h2>
   <p>Formal</p>
 </section>
 
-<!-- MESA DE REGALOS -->
-<section class="section">
+<!-- REGALOS -->
+<section class="section fade">
   <h2>Mesa de regalos</h2>
-  <p>Tu presencia es nuestro mejor regalo,<br>
-     pero si deseas obsequiarnos algo, aquí te dejamos opciones.</p>
-  <a class="btn" href="#">Ver mesa de regalos</a>
+  <p class="text">
+    Tu presencia es nuestro mejor regalo.<br>
+    Si deseas obsequiarnos algo, aquí te dejamos opciones.
+  </p>
+  <a class="btn" href="#">Ver mesa</a>
 </section>
 
 <!-- RSVP -->
-<section class="section rsvp">
-  <h2>Confirmación de asistencia</h2>
+<section class="section rsvp slide">
+  <h2>Confirmación</h2>
   <p>Favor de confirmar antes del 1 de marzo</p>
-  <a class="btn primary"
-     href="https://wa.me/521XXXXXXXXXX?text=Confirmo%20mi%20asistencia"
-     target="_blank">
-     Confirmar por WhatsApp
+  <a class="btn primary" href="https://wa.me/521XXXXXXXXXX" target="_blank">
+    Confirmar asistencia
   </a>
 </section>
 
-<!-- MENSAJE FINAL -->
-<section class="section footer">
+<!-- FOOTER -->
+<footer class="fade">
   <p>Será un honor contar con tu presencia</p>
   <span>Keyla & Angel</span>
-</section>
+</footer>
 
 <script src="script.js"></script>
 </body>
