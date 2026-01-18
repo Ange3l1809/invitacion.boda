@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+  document.getElementById("loader").style.display = "none";
+});
+
+
 // Cuenta regresiva
 const eventDate = new Date("March 14, 2026 17:00:00").getTime();
 
