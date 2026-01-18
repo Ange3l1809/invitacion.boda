@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+.cover {
+  padding: 100px 20px;
+  background: linear-gradient(#ffffff, #eaeaea);
+}
+
+.cover h1 {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.intro {
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.date {
+  letter-spacing: 4px;
+}
+
+.section {
+  padding: 50px 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.parents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+#countdown div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 70px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #b6c4b0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.primary {
+  background: #7a9a88;
+}
+
+.footer {
+  background: #f0f0f0;
+}
