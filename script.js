@@ -38,12 +38,34 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-const music = document.getElementById("music");
-const musicBtn = document.getElementById("musicBtn");
-let playing = false;
+/* ===== MUSICA AUTO-PLAY SAFARI ===== */
+  const music = document.getElementById("music");
+  const musicBtn = document.getElementById("musicBtn");
+  let started = false;
 
-musicBtn.onclick = () => {
-  playing ? music.pause() : music.play();
-  playing = !playing;
-};
+  function startMusic() {
+    if (!started) {
+      music.volume = 0.6;
+      music.play().catch(() => {});
+      started = true;
+      musicBtn.innerText = "⏸️";
+    }
+  }
 
+  // Se activa con cualquier interacción
+  document.addEventListener("touchstart", startMusic, { once: true });
+  document.addEventListener("click", startMusic, { once: true });
+  document.addEventListener("scroll", startMusic, { once: true });
+
+  // Botón manual
+  musicBtn.onclick = () => {
+    if (music.paused) {
+      music.play();
+      musicBtn.innerText = "⏸️";
+    } else {
+      music.pause();
+      musicBtn.innerText = "🎵";
+    }
+  };
+
+});
