@@ -148,3 +148,16 @@ footer {
   box-shadow: 0 10px 25px rgba(0,0,0,.2);
   z-index: 999;
 }
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery img {
+  width: 80%;
+  border-radius: 18px;
+  scroll-snap-align: center;
+}
