@@ -285,10 +285,14 @@ footer {
 }
 
 .gift-card img {
-  width: 40px;
+  width: 34px;
+  height: auto;
   display: block;
-  opacity: 1;
-  visibility: visible;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
 }
 
 .gift-card:hover {
