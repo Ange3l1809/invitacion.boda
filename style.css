@@ -9,7 +9,39 @@ body {
 }
 
 .cover {
-  padding: 120px 20px;
+  min-height: 100vh;
+  background-image: url("img/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: zoom 12s ease-in-out infinite alternate;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+@keyframes zoom {
+  from { background-size: 100%; }
+  to   { background-size: 110%; }
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.cover * {
+  position: relative;
+  z-index: 2;
 }
 
 .cover h1 {
