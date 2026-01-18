@@ -133,3 +133,18 @@ footer {
   50% {opacity: 1}
   100% {opacity: 0.3}
 }
+
+#musicBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #9FB3A2;
+  border: none;
+  color: white;
+  font-size: 20px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,.2);
+  z-index: 999;
+}
