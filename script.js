@@ -17,26 +17,19 @@ setInterval(() => {
 }, 1000);
 
 // Animaciones scroll
+
 document.addEventListener("DOMContentLoaded", () => {
 
-  const items = document.querySelectorAll('.fade, .slide');
-
-  const observer = new IntersectionObserver((entries, observer) => {
+  /* ===== ANIMACIONES ===== */
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        observer.unobserve(entry.target); // solo una vez
+        entry.target.classList.add("show");
       }
     });
-  }, {
-    rootMargin: '0px 0px -10% 0px',
-    threshold: 0
-  });
+  }, { threshold: 0.15 });
 
-  items.forEach(item => observer.observe(item));
-
-});
-
+  document.querySelectorAll('.fade, .slide').forEach(el => observer.observe(el));
 
 /* ===== MUSICA AUTO-PLAY SAFARI ===== */
   const music = document.getElementById("music");
