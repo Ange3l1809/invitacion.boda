@@ -165,3 +165,12 @@ footer {
   border-radius: 18px;
   scroll-snap-align: center;
 }
+
+/* ===== RSVP ===== */
+.rsvp {
+  background: rgba(255,255,255,0.55);
+  -webkit-backdrop-filter: blur(14px); /* Safari */
+  backdrop-filter: blur(14px);
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0,0,0,.08);
+}
