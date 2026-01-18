@@ -244,3 +244,21 @@ footer {
   }
 }
 
+.btn-wallet img {
+  height: 48px;
+}
+
+.btn-calendar {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  color: #222;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  font-size: 16px;
+  text-decoration: none;
+}
+.btn-calendar:hover {
+  background-color: #eee;
+}
