@@ -1,5 +1,3 @@
-save-the-date.ics
-
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Save the Date//Keyla y Angel//ES
