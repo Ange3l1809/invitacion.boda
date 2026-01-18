@@ -17,15 +17,19 @@ setInterval(() => {
 }, 1000);
 
 // Animaciones scroll
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-});
+window.addEventListener("DOMContentLoaded", () => {
 
-document.querySelectorAll('.fade, .slide').forEach(el => observer.observe(el));
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.fade, .slide').forEach(el => observer.observe(el));
+
+});
 
 const music = document.getElementById("music");
 const musicBtn = document.getElementById("musicBtn");
