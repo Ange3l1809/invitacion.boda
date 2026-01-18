@@ -4,6 +4,8 @@ body {
   background: #FAFAF8;
   color: #3A3A3A;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+  
 }
 
 .cover {
