@@ -26,3 +26,13 @@ const observer = new IntersectionObserver(entries => {
 });
 
 document.querySelectorAll('.fade, .slide').forEach(el => observer.observe(el));
+
+const music = document.getElementById("music");
+const musicBtn = document.getElementById("musicBtn");
+let playing = false;
+
+musicBtn.onclick = () => {
+  playing ? music.pause() : music.play();
+  playing = !playing;
+};
+
